@@ -1,3 +1,5 @@
+After compiling this program, create a remap rule file, and use the following command syntax to run the program:
+
 java -cp <bin folder> Main <input world path> <output world path> <remap rule file path>
 
 The remap rule file is a text file with a list of IDs to change. It must look like this example:
@@ -34,8 +36,7 @@ block 1901:4 1:0
 item 1901:4 3507:15
 </pre>
 
-# is a comment marker.<br>
-Blank lines are ignored.<br>
+Comments start with '#'. Blank lines are ignored.<br>
 Each line has "block" or "item", then the old ID, then the new ID.<br>
 If you don't specify metadata for the old ID (e.g "1901" instead of "1901:1") then it will match any metadata.<br>
 If you don't specify metadata for the new ID, the metadata will not be changed.<br>
